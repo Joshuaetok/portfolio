@@ -34,6 +34,19 @@
       ticking = false;
     });
   };
+  const dock = $(".nav__pill");
+  let lastY = scrollY;
+  addEventListener(
+    "scroll",
+    () => {
+      const dy = scrollY - lastY;
+      if (Math.abs(dy) > 8) {
+        dock.classList.toggle("is-hidden", dy > 0 && scrollY > 120);
+        lastY = scrollY;
+      }
+    },
+    { passive: true }
+  );
   addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 

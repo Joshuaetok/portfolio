@@ -1351,10 +1351,30 @@ h3 {
     grid-template-columns: 1fr;
   }
   .hero__visual {
-    order: -1;
+    margin-top: 12px;
   }
   .portrait {
-    width: min(78%, 330px);
+    width: min(58%, 260px);
+  }
+  .hero {
+    padding-top: 96px;
+  }
+  .hero__cta {
+    margin: 26px 0 24px;
+  }
+  .hero__cta .btn {
+    flex: 1 1 100%;
+    padding: 16px 24px;
+  }
+  .nav__pill {
+    transition: transform 0.4s var(--ease), opacity 0.3s;
+  }
+  .nav__pill.is-hidden {
+    transform: translateY(140%);
+    opacity: 0;
+  }
+  .footer {
+    padding-bottom: 120px;
   }
   .chip--a {
     left: -18%;
@@ -1448,15 +1468,11 @@ h3 {
   .nav__cta {
     display: none;
   }
-  .hero__cta .btn {
-    flex: 1 1 auto;
-  }
   .stats > div {
     padding: 20px;
   }
   .chip {
-    font-size: 0.75rem;
-    padding: 8px 12px;
+    display: none;
   }
 }
 
