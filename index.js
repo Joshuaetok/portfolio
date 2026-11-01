@@ -145,11 +145,11 @@
   pills.forEach((p) => {
     const f = p.dataset.filter;
     p.querySelector("span").textContent =
-      f === "all" ? cards.length : cards.filter((c) => c.dataset.cat === f).length;
+      f === "all" ? cards.length : cards.filter((c) => (c.dataset.cat || "").split(/\s+/).includes(f)).length;
     p.addEventListener("click", () => {
       pills.forEach((x) => x.classList.toggle("is-active", x === p));
       cards.forEach((c) => {
-        const show = f === "all" || c.dataset.cat === f;
+        const show = f === "all" || (c.dataset.cat || "").split(/\s+/).includes(f);
         if (show) {
           c.hidden = false;
           c.classList.add("in");
