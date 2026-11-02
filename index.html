@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Personal Portfolio</title>
+    <title>Web Developer | Ui/Ux Designer | SEO Specialist</title>
+    <meta name="description" content="Portfolio of Joshua Etok — Web Developer, UI/UX Designer, and SEO Specialist based in Nigeria. Crafting high-performing web platforms and clean digital experiences." />
+    <meta name="author" content="Joshua Etok" />
+
+    <!-- Performance Preloads & Hints -->
+    <link rel="preload" as="image" href="./assets/portrait.webp" type="image/webp" />
+    <link rel="preconnect" href="https://unicons.iconscout.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
 
     <!-- Favicon -->
     <link rel="icon" href="./assets/portfolio-icon.png" type="image/png" />
@@ -48,11 +56,14 @@
     <header>
       <div class="header__container">
         <div class="header__image" data-aos="fade-up" data-aos-delay="800">
-          <img src="./assets/portrait.jpg" alt="Header Image" />
+          <picture>
+            <source srcset="./assets/portrait.webp" type="image/webp" />
+            <img src="./assets/portrait.jpg" alt="Joshua Etok - Web Developer, UI/UX Designer &amp; SEO Specialist" fetchpriority="high" width="400" height="400" />
+          </picture>
         </div>
         <h5 data-aos="fade-in">Hi, I'm Joshua</h5>
         <h1 data-aos="fade-in">
-          Web Developer & <span>SEO Specialist</span><br />Based in Nigeria
+          Web Developer, <span>UI/UX Designer</span> &amp; <span>SEO Specialist</span><br />Based in Nigeria
         </h1>
         <p data-aos="fade-in">
           I create high-performing, SEO-optimized websites that enhance
@@ -90,6 +101,7 @@
           <menu>
             <button class="btn primary experience__btn">Experience</button>
             <button class="btn education__btn">Education</button>
+            <button class="btn certificates__btn">Certificates</button>
             <button class="btn skills__btn">Skills</button>
             <button class="btn about__btn">About me</button>
           </menu>
@@ -119,7 +131,10 @@
       >
         <articles class="project mix frontend plugins" data-order="1">
           <div class="project__image">
-            <img src="./assets/congregrid.png" alt="CongreGrid &amp; CongreGrid Pro Church Management Platform" />
+            <picture>
+              <source srcset="./assets/congregrid.webp" type="image/webp" />
+              <img src="./assets/congregrid.png" alt="CongreGrid &amp; CongreGrid Pro Church Management Platform" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>CongreGrid &amp; CongreGrid Pro | Modular Church Management Platform</h5>
           <p>
@@ -133,7 +148,10 @@
         </articles>
         <articles class="project mix frontend plugins" data-order="1">
           <div class="project__image">
-            <img src="./assets/orderspell.png" alt="OrderSpell WooCommerce WhatsApp Plugin" />
+            <picture>
+              <source srcset="./assets/orderspell.webp" type="image/webp" />
+              <img src="./assets/orderspell.png" alt="OrderSpell WooCommerce WhatsApp Plugin" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>OrderSpell | Conversational Commerce &amp; Chat Orders for WooCommerce</h5>
           <p>
@@ -147,7 +165,10 @@
         </articles>
         <articles class="project mix fullstack" data-order="1">
           <div class="project__image">
-            <img src="./assets/project1.png" alt="Project One" />
+            <picture>
+              <source srcset="./assets/project1.webp" type="image/webp" />
+              <img src="./assets/project1.png" alt="Custom Audio Streaming Platform | PHP & MySQL Architecture" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>Custom Audio Streaming Platform | PHP & MySQL Architecture</h5>
           <p>
@@ -161,7 +182,10 @@
         </articles>
         <articles class="project mix frontend plugins" data-order="2">
           <div class="project__image">
-            <img src="./assets/project11.png" alt="Advanced Product Filter Plugin" />
+            <picture>
+              <source srcset="./assets/project11.webp" type="image/webp" />
+              <img src="./assets/project11.png" alt="Advanced Product Filter Plugin for WooCommerce & Elementor" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>Advanced Product Filter Plugin for WooCommerce & Elementor</h5>
           <p>
@@ -178,7 +202,10 @@
         </articles>
         <articles class="project mix frontend plugins" data-order="2">
           <div class="project__image">
-            <img src="./assets/project9.png" alt="Client Projects Manager" />
+            <picture>
+              <source srcset="./assets/project9.webp" type="image/webp" />
+              <img src="./assets/project9.png" alt="Client Projects Manager" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>Custom WordPress Plugin Development | CRM & Project Manager</h5>
           <p>
@@ -192,7 +219,10 @@
         </articles>
         <articles class="project mix frontend" data-order="2">
           <div class="project__image">
-            <img src="./assets/project2.png" alt="Project Two" />
+            <picture>
+              <source srcset="./assets/project2.webp" type="image/webp" />
+              <img src="./assets/project2.png" alt="FMCG Corporate Brand Portal | Custom Catalog & SEO Strategy" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>FMCG Corporate Brand Portal | Custom Catalog & SEO Strategy</h5>
           <p>
@@ -207,7 +237,10 @@
         </articles>
         <articles class="project mix frontend" data-order="3">
           <div class="project__image">
-            <img src="./assets/project3.png" alt="Project Three" />
+            <picture>
+              <source srcset="./assets/project3.webp" type="image/webp" />
+              <img src="./assets/project3.png" alt="B2B Engineering Services Platform | WhatsApp API Integration" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>B2B Engineering Services Platform | WhatsApp API Integration</h5>
           <p>
@@ -222,7 +255,10 @@
         </articles>
         <articles class="project mix fullstack" data-order="4">
           <div class="project__image">
-            <img src="./assets/project4.png" alt="Seeds of Knowledge Intl School - Full-Stack Web Platform &amp; SaaS Management (PHP/MySQL)" />
+            <picture>
+              <source srcset="./assets/project4.webp" type="image/webp" />
+              <img src="./assets/project4.png" alt="Seeds of Knowledge Intl School - Full-Stack Web Platform &amp; SaaS Management (PHP/MySQL)" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>Seeds of Knowledge Intl School | Full-Stack Web Platform &amp; SaaS Management (PHP/MySQL)</h5>
           <p>
@@ -240,7 +276,10 @@
 
         <articles class="project mix frontend" data-order="4">
           <div class="project__image">
-            <img src="./assets/project7.png" alt="Project " />
+            <picture>
+              <source srcset="./assets/project7.webp" type="image/webp" />
+              <img src="./assets/project7.png" alt="Tech E-Commerce Hub | AI Chatbot & Payment API Integration" loading="lazy" decoding="async" />
+            </picture>
           </div>
           <h5>Tech E-Commerce Hub | AI Chatbot & Payment API Integration</h5>
           <p>
@@ -348,7 +387,10 @@
             </figcaption>
             <div class="swiper__client">
               <div class="swiper__client-avatar">
-                <img src="./assets/avatar6.jpg" alt="Client One" />
+                <picture>
+                  <source srcset="./assets/avatar6.webp" type="image/webp" />
+                  <img src="./assets/avatar6.jpg" alt="Ajala Africa" loading="lazy" decoding="async" width="50" height="50" />
+                </picture>
               </div>
               <div class="swiper__client-details">
                 <h5>Ajala Africa</h5>
@@ -363,7 +405,10 @@
             </figcaption>
             <div class="swiper__client">
               <div class="swiper__client-avatar">
-                <img src="./assets/avatar5.jpg" alt="Client One" />
+                <picture>
+                  <source srcset="./assets/avatar5.webp" type="image/webp" />
+                  <img src="./assets/avatar5.jpg" alt="Engr. Emmanuel" loading="lazy" decoding="async" width="50" height="50" />
+                </picture>
               </div>
               <div class="swiper__client-details">
                 <h5>Engr. Emmanuel</h5>
@@ -379,7 +424,10 @@
             </figcaption>
             <div class="swiper__client">
               <div class="swiper__client-avatar">
-                <img src="./assets/avatar1.jpg" alt="Client One" />
+                <picture>
+                  <source srcset="./assets/avatar1.webp" type="image/webp" />
+                  <img src="./assets/avatar1.jpg" alt="Dolapo Ade" loading="lazy" decoding="async" width="50" height="50" />
+                </picture>
               </div>
               <div class="swiper__client-details">
                 <h5>Dolapo Ade</h5>
