@@ -324,6 +324,7 @@ nav {
 header {
   margin-top: 3.5rem;
   min-height: calc(100vh - 3.5rem);
+  min-height: calc(100svh - 3.5rem);
   padding: 3.5rem 0 5.5rem;
   display: grid;
   place-items: center;
@@ -377,7 +378,43 @@ header {
 
 .header__container h1 {
   margin: 0.9rem 0 0.65rem;
-  line-height: 1.22;
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+.header__container .hero__role {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-gray-500);
+  margin-bottom: 1rem;
+}
+
+.hero__dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background: currentColor;
+  vertical-align: 0.05em;
+  animation: heroPulse 2s infinite;
+}
+
+@keyframes heroPulse {
+  50% { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__dot { animation: none; }
+}
+
+.header__cta .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .header__container h1 span {
@@ -924,7 +961,10 @@ form button {
   }
 
   .header__socials {
-    display: none;
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.75rem;
   }
 
   .resume__container {
@@ -992,8 +1032,13 @@ form button {
     margin-top: 0.4rem;
   }
 
-  .header__socials {
-    display: none;
+  .header__cta {
+    width: 100%;
+  }
+
+  .header__cta .btn {
+    flex: 1 1 0;
+    padding-inline: 0.75rem;
   }
 
   .resume__container {
@@ -1072,5 +1117,21 @@ form button {
 
   .round {
     border-radius: 10px;
+  }
+}
+
+/* Short viewports: keep hero CTAs clear of the floating nav dock */
+@media screen and (max-height: 860px) {
+  header {
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+  }
+  .header__image {
+    width: 8.5rem;
+    height: 10.2rem;
+    margin-bottom: 1.1rem;
+  }
+  .header__cta {
+    margin-top: 1.4rem;
   }
 }
